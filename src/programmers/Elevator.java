@@ -13,7 +13,7 @@ public class Elevator {
     }
 
     public static String guide(int floor) {
-        if (floor >= 11) {
+        if (floor >= 1 && floor <= 10) {
             return "고층";
         } else {
             return "저층";
