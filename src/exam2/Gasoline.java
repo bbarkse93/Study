@@ -10,6 +10,6 @@ public class Gasoline {
 
     public static double calcEffiency(double fuel, double distance) {
         /* 해당 메소드를 구현 하세요 */
-        return 0;
+        return distance / fuel;
     }
 }

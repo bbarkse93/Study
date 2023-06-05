@@ -4,9 +4,7 @@ public class Walking {
 
     public static void main(String[] args) {
 
-        double result;
-
-        result = Walking.CalculateCalory(5000);
+        double result = CalculateCalory(5000);
         System.out.println(result);
 
     }

@@ -13,10 +13,21 @@ public class Elevator {
     }
 
     public static String guide(int floor) {
+        // 1. 유효성 검사(필터링 역할)
+        if (floor > 20 || floor < 1)
+            return "오류";
+
+        // 2. 리턴값 초기화
+        String result = "";
+
+        // 3. 알고리즘
         if (floor >= 1 && floor <= 10) {
-            return "고층";
-        } else {
-            return "저층";
+            result = "고층";
+        } else if (floor >= 11 && floor <= 20) {
+
+            result = "저층";
         }
+        // 4. 리턴하기
+        return result;
     }
 }

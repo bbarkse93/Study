@@ -1,4 +1,4 @@
-package exam2;
+package programmers;
 
 public class JavaCafe {
     public static void main(String[] args) {
@@ -6,26 +6,29 @@ public class JavaCafe {
         printPay(10.00, 50);
         printPay(7.50, 38);
         printPay(8.50, 66);
-
     }
 
     // 시급과 일한 시간을 입력받아, 주급을 출력
     public static void printPay(double basePay, int hours) {
+        // 예외처리
         if (basePay < 8) {
             System.out.println("최저 시급 에러");
             return;
         }
+
         if (hours > 60) {
             System.out.println("초과 근무 시간 에러");
             return;
         }
 
+        // 시급 계산
         double pay = basePay * hours;
 
+        // 초과 수당 계산
         if (hours > 40) {
-            pay = pay + ((hours - 40) * 5);
+            pay = pay + (basePay - 40) * 5;
         }
-
         System.out.printf("$ %.2f\n", pay);
     }
+
 }

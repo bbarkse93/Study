@@ -18,7 +18,7 @@ public class Gamble {
     }
 
     public static int dice() {
-        return (int) (Math.random() * 6) + 1;
+        return (int) ((Math.random() * 6) + 1);
     }
 
     public static double exchange(double dollar) {
