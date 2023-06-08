@@ -1,4 +1,4 @@
-package ex05.ch02;
+package ex05.ch02_1;
 
 public class Zealot extends ProtossUnit {
     String name;
@@ -11,20 +11,23 @@ public class Zealot extends ProtossUnit {
         this.attack = attack;
     }
 
-    public void setHp(int hp) {
-        this.hp = hp;
-    }
-
-    public String getName() {
-        return name;
-    }
-
+    @Override
     public int getHp() {
         return hp;
     }
 
+    @Override
+    public void setHp(int hp) {
+        this.hp = hp;
+    }
+
+    @Override
     public int getAttack() {
         return attack;
     }
 
+    @Override
+    public String getName() {
+        return name;
+    }
 }
