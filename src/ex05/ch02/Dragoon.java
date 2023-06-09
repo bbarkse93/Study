@@ -1,9 +1,9 @@
 package ex05.ch02;
 
 public class Dragoon extends ProtossUnit {
-    String name;
-    int hp;
-    int attack;
+    private String name;
+    private int hp;
+    private int attack;
 
     public Dragoon(String name, int hp, int attack) {
         this.name = name;

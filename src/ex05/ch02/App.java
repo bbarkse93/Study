@@ -11,12 +11,9 @@ public class App {
     public static void main(String[] args) {
         ProtossUnit z1 = new Zealot("질럿1", 100, 10);
         ProtossUnit z2 = new Zealot("질럿2", 100, 10);
-        ProtossUnit d1 = new Dragoon("드라군1", 150, 20);
-        ProtossUnit t1 = new DarkTempler("다크템플러1", 50, 50);
+        ProtossUnit d1 = new Dragoon("드라군1", 100, 5);
 
         attack(z1, z2);
         attack(z1, d1);
-        attack(t1, z1);
-        attack(z2, t1);
     }
 }
