@@ -9,7 +9,7 @@ public class BurgerSet {
         this(new Burger(), new Coke(), new Potato());
     }
 
-    public BurgerSet(Burger burger, Coke coke, Potato potato) {
+    private BurgerSet(Burger burger, Coke coke, Potato potato) {
         this.burger = burger;
         this.coke = coke;
         this.potato = potato;

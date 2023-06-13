@@ -24,7 +24,6 @@ public class Single01 {
         미니언 m1 = new 미니언();
         미니언 m2 = new 미니언();
         미니언 m3 = new 미니언();
-        미니언 m4 = new 미니언();
 
         System.out.println(m1.hashCode());
         System.out.println(m2.hashCode());
